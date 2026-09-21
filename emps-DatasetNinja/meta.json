@@ -1,0 +1,24 @@
+{
+    "classes": [
+        {
+            "title": "particle",
+            "shape": "bitmap",
+            "color": "#FF00EA",
+            "geometry_config": {},
+            "id": 6476581,
+            "hotkey": ""
+        }
+    ],
+    "tags": [
+        {
+            "name": "doi",
+            "value_type": "any_string",
+            "color": "#0F8A20",
+            "id": 22507,
+            "hotkey": "",
+            "applicable_type": "all",
+            "classes": []
+        }
+    ],
+    "projectType": "images"
+}

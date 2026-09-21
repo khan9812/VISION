@@ -1,0 +1,56 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830764,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.biomaterials.2019.119479",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:47:48.470Z",
+            "updatedAt": "2023-10-07T09:47:48.470Z"
+        }
+    ],
+    "size": {
+        "height": 514,
+        "width": 512
+    },
+    "objects": [
+        {
+            "id": 62945494,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:47:48.472Z",
+            "updatedAt": "2023-10-07T09:47:48.472Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwByQE2/olQTkcNChoKAAAADUlIRFIAAACWAAAAlgEDAAAABs/joQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFxSURBVHic7dbNjcMgEAVgWxx8dAmU4tLs0iiFEjhysMLGwQPz8yIhRZu9LKfoU8g8kMLMNLWVJrN8CZpcKQ9Fc3muU9p6mfriflmxW4usUr9WeBxXSRTxt/EihVanpVmU4VQR3yzrJKJI6euQhxAnccyo8MIsAaPCKzM6iQe2Adu5HcCiOQaFmYE5YdlEpptZgYnId8ANmKR6g8qiiVcDOmCrsgzstPFeoTdgu7Ji471uesgCsGiO9s70ca8DLx/YOmQZmv/ANmOnveY/NEP/9guWv2AJ2v4F24YsDps3FoAd4L86avaZHLaH7gpv7LRP9mXmrcvgjU3gLY7AAnjHD/De27ZVTYV+2DZYxxAVOoNelmz7vfuvDBhAvwyg19qRgcwBEwFpgOFhaN7gYdJtKzA0v6DZZ0LGChOxwn2+8s36sIdmuBlYL3x0a4U7tSJ8nqQiCRgr0a46MLuLyHl3Mz9Hm8XWulnP1BdGbc/99OEHlsx34gsNG2QAAAAASUVORK5CYIKisdGB",
+                "origin": [
+                    46,
+                    319
+                ]
+            }
+        },
+        {
+            "id": 62945493,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:47:48.471Z",
+            "updatedAt": "2023-10-07T09:47:48.471Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBqQFW/olQTkcNChoKAAAADUlIRFIAAACQAAAAiAEDAAAAMg3wDQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFRSURBVHic1dYxjoQwDAVQ0BaUOUKOwtHI0XIUjpCSIsK7TEhif3ukaIZmKZ80zjdi7ExTeRzRPolnJqJDkv8jknQJRS7Li05O64soMNoKsTPnIpSwlCjmb2LF1ko9xkZY7KcKZazOenKdav21U8Tq/QV1qfVnRoQZWv2FU8QM9f14Tglj1RQbp4yxbhKxyosVsUrWRVLAWCWrQV7SjklL/E3SoSnbRIpmoFP1c3Vk0IIUNEVs8Q15pB27vvoeoQO7/oLy/6FzkFC+oY9DKKIH6clcJq2PUdbf/Sg5pGOIkv6L7kMUPyVjKITBAYN06mFlzK8xOvQsNIaoMWqTPaOdpKhXQNSLItjrxFg61mpaMby55kSwqFdmeLdYebC68dWB5ipnwdJNLFi9AzhNLEV4T/3IfqtpR7a7ST+yX8HakalR63KasFhm5PB3LdkkH9/gF/QCf5UVEeq4AAAAAElFTkSuQmCCWlC/XA==",
+                "origin": [
+                    306,
+                    25
+                ]
+            }
+        }
+    ]
+}

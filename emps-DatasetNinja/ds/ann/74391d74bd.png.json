@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7831099,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.reactfunctpolym.2020.104520",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:49:32.318Z",
+            "updatedAt": "2023-10-07T09:49:32.318Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 541
+    },
+    "objects": [
+        {
+            "id": 62953824,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:49:32.319Z",
+            "updatedAt": "2023-10-07T09:49:32.319Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwB7wIQ/YlQTkcNChoKAAAADUlIRFIAAAEkAAAA5wEDAAAAjTy5AQAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAKXSURBVHic7dpNbuQgEAVgj7LIZiSOwFE4GhyNo3AEll60XKP2P1BFPSso6sXU+hMNz0ViG0/TXv416fVNRBFBRLOi/KoodZGhvbo/SgQwQwQ4SwhzhVoE5QslrZQIYH9qlTn1VSt2Zt+1ovC3VaZR3Gi2VRQa5RgVG+UZ1YbBIKIaNXGx82/i2qraB21c3AKMoBZIlYOJqthSVlLFTzpJFdHKaobU/Sc9pERUTOzHaobUNTG+cfYKkDonJrTXVhlSZytKTbjV0T2mqzKkXpA6dpztqwSprLXXAzVrTbjWorbEWiNVgFSEVMZVt1VxNUNqURt6rZEqqJvjXRFSCVJZ3xywmiH1gtQCKYKV1VUYqKK6td+VIJXHKq+rGVIvSC361oYVjVV+mAoDVRyo0oeq/LHK/VcfriykzIcq/T/yW+l3Cm+l3sE8UMifzMHKD1QOUlZXCVVmoAKaAlZA6yTg5ne7y/x95SBlIWUGKj38AN/hY0q/RAF5btqUH6icptbnOfPrSr1EE/TY90ANfeR2A5Xto/2FgYGUEusjpXT+rpTwj/dbfXW8+fFdNT9SrqvyhMT6TPVjTY9UP9Y4IbGGQ/mfqwP1Yz2VhZTpoAVS1wvzXqzXq9heT+dT9cLHVDpV7xLFS3lZhUs5WU1PlRXR/WW5HOs8UOWbki/RXcmxxrvykgrPlZPUHYmLXCBVHgBJUZTnm1IfFnGJi8RUKpXjVSyV5VUolRDFhCjsWK05PGRVcwbtOZVr5SBlORVrZTgVasVF0Z6Pcl3BHLMzi2ROz5lFplYxE2smP3HpM6idGHugbIElMm0ROVVPTDhbryYmfGtg1LRaJn+2gAxVDiai+2Dd7yQ8gs5rHrpqH0z7LuMLGWpjJfoHRXpz7LEaZd0AAAAASUVORK5CYIJYO1M9",
+                "origin": [
+                    144,
+                    120
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830909,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.ajps.2020.04.001",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:33.621Z",
+            "updatedAt": "2023-10-07T09:48:33.621Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 518
+    },
+    "objects": [
+        {
+            "id": 62949051,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:33.622Z",
+            "updatedAt": "2023-10-07T09:48:33.622Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBQQG+/olQTkcNChoKAAAADUlIRFIAAABsAAAAbAEDAAAAtajFjgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAADpSURBVHic3dWxEYQgEAVQHQJDS6AUS4PSKIUSDA0Y904B+btwOKRn9kbYBZXvNF2XojDBtRG5IkVEB7uJty/RjmNh9HLzZFPLZBPpo+aoXEslplprIkVqzi3TYuHcKSuWnh8e2KdiYG1jJ11osW2TptDjKiruuKh7HarLBRi6PNkOrj0IaqSV3EZokG6Efoyo77P7exrk4LNiHHop7uV16y5XZPXViU+0w/B2FsTBEcdKHjrzk64+v5oT9lCiLS25ihERMiKCCn0rvp7GzejLjc9mbIpQlZGrsVIV1yLMZdSvOLX6L5SfyAcjAILEakkijAAAAABJRU5ErkJgguNjiD0=",
+                "origin": [
+                    214,
+                    146
+                ]
+            }
+        }
+    ]
+}

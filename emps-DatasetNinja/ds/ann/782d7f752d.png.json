@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830769,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.aca.2019.02.037",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:47:50.688Z",
+            "updatedAt": "2023-10-07T09:47:50.688Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 697
+    },
+    "objects": [
+        {
+            "id": 62945569,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:47:50.688Z",
+            "updatedAt": "2023-10-07T09:47:50.688Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwB7wIQ/YlQTkcNChoKAAAADUlIRFIAAADvAAAA5wEDAAAAzO2TlwAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAKXSURBVHictdlBlqsgEAVQczLIkCWwFJYmS3MpLoGhgxz5v/NVqOLVw25+M+x7oq8KJGmcJjCeb/TXY4ScczT18VfzarL7Yvvj4cPJ4o/m3dDnP84LZn/wxm5tXj2fg97aKC1cnBDPF8Nsl8Jsj8Io26vitWVXMcjmKwbZQsUgW65HZMHBpD0FN9FfgpvoXnATPQhuVvssuKksy0GDN/xSrPriFKu+eMWqL0Gx6otS1ZeHZtkXXZfqi65LFa6DK9bBVV84N8Fl25rg32LHuU0m5mTm3GrNIFnNbcfFhHvOIHjNIHjFoOM1o+AVo+DVWnScUbL7jLQsdFhXYRi8MAxeHhPPOXCGejEOfjGckJIc13WXcfCLZ8zbPcZ6slHXyUbwcyl22HEOnOchNvRgq+yDrbqOzWOMvcUL7crBs8XxBhuL/GSzK5nXdYsdZ/9D3nnTdt6VDr/pUurxxnva4cR7eofdEHvOweSV9rTHyw029cP2Kv8sc7vlmff0DjtTd85v3vIOb3xGEu/pGI/NZ+Tz2WG+qXV45w9gh983nm57sXR47OFf+VLrcORLrcN8O+7w/9itTd44J76Zj/HKeeEcOU8jvHN+cz5+Js4GpyFeOS+cI+dphPch7vxwT7/JC+c4xIf2/hH7Eb85b5wT5/Ume84O8tk0Y8Pu8ES5nCDBb6IOl+Mp+CVZHW51eAa8/iYvhT3gSLk+dnPf5vrID8xJqrhzMAaaPtWDJgN9kaeNQfMq2HNuCl8EN4ULbQpX58O6cH26TJM1hUfFsvDmaFoWnjTLwhfNsnCtsvD2vF8UrstSheuyZOHoRcaLXrvOBrS6OX53Fdi1y82Ntz9n5QnzWVo02BsNra9OXrnNaCrLCPTDX0sCffgP+gsoMNBlqLUAAAAASUVORK5CYILrxXvO",
+                "origin": [
+                    255,
+                    117
+                ]
+            }
+        }
+    ]
+}

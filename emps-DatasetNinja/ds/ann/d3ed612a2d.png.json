@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7831109,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.ijpharm.2017.01.014",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:49:35.498Z",
+            "updatedAt": "2023-10-07T09:49:35.498Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 597
+    },
+    "objects": [
+        {
+            "id": 62954168,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:49:35.498Z",
+            "updatedAt": "2023-10-07T09:49:35.498Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBGQLm/YlQTkcNChoKAAAADUlIRFIAAAEUAAAAXQEDAAAAXp4LKgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAHBSURBVHicjZZLsoQgDEWxHDhkCSyFpeHSWIpLcNiDrs5TECTk9+6oq/qY3HxQnHPOZ2cpwWkyAB8L2QDAYvzF7AYTLiYbTLyY02ASmKaXC4Gfzqw3Y5jeCpNVxhfmUJlQmK/093JniKCZXkrJlZGmsZV/EmimQ+lvRYROL9Xqw/Cm12pVZUK1+jC86YgZznSbU2MOhvHP043hDIXn6cZwhtLTls7QPdta65KcLBCG7lmkDKmsjyl2Zt6PwDBTsg06E14GJVuAZVD1K88gQ35g3t84UBSYsY8gMe+GrDLzoXYuZkNMrx9GZsXMl6SizBMoqswdCXs8h55LOpE7XgdOLTHeYrKbG0S1O9vQ3AtGv2k0nL5ocXmd8/wYZTIcqn3eFUbTSeLU1jcpTFs6zVA7vJohcrSp+rlU9uw9lrKhfuAUQ7uzDb2HWzb0MmIXx9dNEJjxhSwZ+vyDOQdG2jPECKaPkRFM55HxPLOPjGAIIfxYp+8VW/2JGTbZ4cxA5DbDzJ5+YpNph0uWCUMCcdeCORBNRV3PlRdFzHDIlIxLNQWSroxjINZNle6myutuqmon9Vt3kMYwaNWKajKKKvIz8gdl2aYAqvgTpQAAAABJRU5ErkJggtU69H0=",
+                "origin": [
+                    155,
+                    198
+                ]
+            }
+        }
+    ]
+}

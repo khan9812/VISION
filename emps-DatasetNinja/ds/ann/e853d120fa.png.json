@@ -1,0 +1,56 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830924,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.polymertesting.2019.106110",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:36.893Z",
+            "updatedAt": "2023-10-07T09:48:36.893Z"
+        }
+    ],
+    "size": {
+        "height": 528,
+        "width": 512
+    },
+    "objects": [
+        {
+            "id": 62949383,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:36.894Z",
+            "updatedAt": "2023-10-07T09:48:36.894Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBaAGX/olQTkcNChoKAAAADUlIRFIAAAB1AAAAaAEDAAAA9YItugAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAEQSURBVHic1dVBsoMgDAZgnS5c9gg9ikezR8tROAJLFox5UpKQ/L43ttPVY/eNkATBOE1tzPvkx8zM3uvhFB9zHl6a6/DWzHE6M6lv3TksZy4+2zGspB5uBBTyM4Q339QZXEI6810tCR9qCbj+aQKnUK4WYJSEwzWUf/YeypcCPvXiTODkt/+GW8AHxwnBBVzB7F9XDxhNF04XzuBy8vbPzF85XzhBPjp5DcbzgvPE80bj/chwvyjez3bf0P5+73DfCzj98j3MYL9h+J53cIX+UGP/kO97AY8CMjjFfqYNzAqSfqcFaEPUArTjasAClvCWgNRbSGcJlLID68fyyrK5L6Dhe1jeJ5D37H8Pr6GPfwCd6FGHRWuzJQAAAABJRU5ErkJggheaonk=",
+                "origin": [
+                    226,
+                    66
+                ]
+            }
+        },
+        {
+            "id": 62949382,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:36.893Z",
+            "updatedAt": "2023-10-07T09:48:36.893Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBVAGr/olQTkcNChoKAAAADUlIRFIAAABqAAAAagEDAAAAbu9W1AAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAD8SURBVHicvdRBDoMgEAVQjEldegSO4tHK0TwKR2DJgjCtODrzFWmamrIxL9GZUeEbsyxLFIwsIkqi4U0S2oXzpm6R3D0gy72UkeSkjarVMf3Knhl0YaIIlbZOE5M7PZkEhblxv3PWhbmxsDQekXZnRCY9Bc+xT7HOgZShyhya/sT+mkGPXOOoGPXIZeg2J8V8H6lNpz/VifP/SE3+Unm6i67J5nfO+Ls/ckQO10wn6h0bcXt/xYDnyMOhq1G9w4x0cLoJzz5hUGSMkVSh7I6IEeQhrzj7tsYZwy1h9MVqTnLpQ6geIjds7PbXkYdVtluC5B9Vm3USb/R68PUF5kQ8152Pv48AAAAASUVORK5CYIJO7pmZ",
+                "origin": [
+                    171,
+                    333
+                ]
+            }
+        }
+    ]
+}

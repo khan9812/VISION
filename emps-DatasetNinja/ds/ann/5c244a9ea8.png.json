@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830839,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.chemosphere.2017.05.118",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:10.521Z",
+            "updatedAt": "2023-10-07T09:48:10.521Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 669
+    },
+    "objects": [
+        {
+            "id": 62947151,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:10.522Z",
+            "updatedAt": "2023-10-07T09:48:10.522Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBqAFX/olQTkcNChoKAAAADUlIRFIAAACpAAAApAEDAAAA1oWcsgAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAFQSURBVHic1ZexccMwDEXJY6FSI2AUrpJNqNE0SkZgmSIXRDZTCQ84yZbvHJWv4fsgCJEpfST6inbCk34TFlXCVfUTcHMxramqX4xJxcc/jEn8hhfGq8WbN+UJcGcMMRvnaZyncZ4a4MVgURS/427wrGh4x9ZwCrBVGXjd46JomCNsDRurRNjWsLKhsMrMeMTsjI34yGMNHeyIt5eLm2YuF4ove1zfXry+ULy8m7gxvEY8NFwZmzWF13SOW4mwU1rP8CgWxjPHdMZh4fSZceKYw9DGDMWXPQ7n+DlD+4tsVxg6pZ0eKK01dEr7b8Wd1m+nxIXFhcVnFg8H9tEzO9IbQwf/nXAjrize2FAYhzPoqLg3sB+puDF0WsW7ZJ1rlQvF+x47rRLmeTZmZpw4vXd7FyzKCGRxYZwZey8dOYUnxgXj3NbEN2TDZ962n4jztvO/fq1remAD6TIAAAAASUVORK5CYIJ1xL5v",
+                "origin": [
+                    269,
+                    158
+                ]
+            }
+        }
+    ]
+}

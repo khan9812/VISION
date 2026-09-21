@@ -1,0 +1,56 @@
+{
+    "description": "",
+    "tags": [
+        {
+            "id": 7830832,
+            "tagId": 22507,
+            "name": "doi",
+            "value": "10.1016.j.sjbs.2019.10.006",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:07.967Z",
+            "updatedAt": "2023-10-07T09:48:07.967Z"
+        }
+    ],
+    "size": {
+        "height": 512,
+        "width": 687
+    },
+    "objects": [
+        {
+            "id": 62947083,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:07.968Z",
+            "updatedAt": "2023-10-07T09:48:07.968Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJwBTgGx/olQTkcNChoKAAAADUlIRFIAAABjAAAAVgEDAAAA4UK6yAAAAAZQTFRFAAAA////pdmf3QAAAAF0Uk5TAEDm2GYAAAD2SURBVHicddTLEYMgFIVhHBcu7SCUYmlYmqVYAksXDDc+EP5jjKt8M3LOdSA4dz/e4elsgbxt0GQZCmaQGRb2u2LVsKvFjLsSCgyhgTpebAoiOx++WOUvzffIlFGdqC9aGPmqSWT/dRfYypA3eVkXREbVyHPqQVQjTSJNQrKEJHz4tUctJOJTrzHrXOcoFUd5izQpyFKQZOYodavMvEr5TGXuwXWS6mBRNFPZUUl2K4pmKsvBKee2pGyiRQ7cqzwLiu4j7Vnw0Mi6orVoYMFDPevKrjgqidp/9FexakLkU954J3iGHMMsTR2X7RW8WFzgpeM+7ecXDGNErBX/zSEAAAAASUVORK5CYIKTWY04",
+                "origin": [
+                    49,
+                    153
+                ]
+            }
+        },
+        {
+            "id": 62947082,
+            "classId": 6476581,
+            "description": "",
+            "geometryType": "bitmap",
+            "labelerLogin": "inbox@datasetninja.com",
+            "createdAt": "2023-10-07T09:48:07.968Z",
+            "updatedAt": "2023-10-07T09:48:07.968Z",
+            "tags": [],
+            "classTitle": "particle",
+            "bitmap": {
+                "data": "eJzrDPBz5+WS4mJgYOD19HAJAtL+QGzDyAwkZX1KVwEptgCfEFcg/f///6U3598FshhLgvyCGRye3UgDcqZ6ujiGVMyZe+kgb4uCAOuFmxUfMjinOSXP9sic4sQpYyvwT+lH+pW7R9YUV51kcH7Q/aWKO1vvCsePdawON6oypmrHpt/cHR3q9FNpr+GpBJle4ZkWjBG9NyP6Ss7vsFGu+1R2+21pmtH/gxVPXNgWX/++1t6kpnirvNexgkUFwjNNeHY+P7T1p5faCtn6zoC5aw4KvQ13W3p7eh2DVNyulJzeD1FABzJ4uvq5rHNKaAIA+WNe+w==",
+                "origin": [
+                    469,
+                    93
+                ]
+            }
+        }
+    ]
+}
