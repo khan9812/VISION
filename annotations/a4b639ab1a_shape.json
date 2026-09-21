@@ -1,0 +1,151 @@
+{
+  "image_name": "a4b639ab1a",
+  "timestamp": "2026-08-17T20:39:07.946646",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": null,
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.5920583009719849,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9926701570680628
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.626961886882782,
+      "correct": true,
+      "border_touching": false
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": null,
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.3954172730445862,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 2,
+      "transfer_mask_iou": 0.9812773039317662
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.37828025221824646,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 3,
+      "transfer_mask_iou": 0.9952901629049536
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.5133070945739746,
+      "correct": true,
+      "border_touching": false
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.833646833896637,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "unmatched_new_mask"
+    },
+    {
+      "particle_id": 6,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.40485861897468567,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "unmatched_new_mask"
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": true,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\a4b639ab1a_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\a4b639ab1a_pred.json",
+    "source_annotation_fingerprint": "b154e4c9dd94f095e8d47fb2b66424d4cc7eefc99d1c1cb853048a6dd307c76d",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 7,
+      "old_mask_count": 5,
+      "hungarian_matched_pairs": 5,
+      "transferred_valid_labels": 0,
+      "new_unmatched_masks": 2,
+      "old_unmatched_masks": 0,
+      "source_annotation_gt_only_ids": 8,
+      "source_duplicate_annotation_rows_collapsed": 0,
+      "source_mask_shape_alignment": "none"
+    },
+    "skip_review_history": [
+      {
+        "reviewed_at": "2026-08-17T20:39:07+09:00",
+        "mode": "click_selected_skipped_masks",
+        "mask_sources": [
+          "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions_sam_p095_s080\\a4b639ab1a_pred.json"
+        ],
+        "displayed_skipped_particle_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "reviewed_particle_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "annotated_particle_ids": [
+          1,
+          4
+        ],
+        "kept_skipped_particle_ids": [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        "prediction_displayed_in_gui": false,
+        "mask_alignment": "none"
+      }
+    ],
+    "zero_classifiable_review_blinded_to_predictions": true
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "image_name": "7e0c56c44b",
+  "timestamp": "2026-08-17T16:38:18.134189",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.6657098531723022,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9977363371779671
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.5570445656776428,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 1,
+      "transfer_mask_iou": 0.9971037094797817
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.4776475131511688,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 4,
+      "transfer_mask_iou": 0.9798899965623926
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": "Irregular",
+      "pred_shape": "Irregular",
+      "pred_confidence": 0.5319036841392517,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 5,
+      "transfer_mask_iou": 0.9905190803507941
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": "Irregular",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.49660053849220276,
+      "correct": false,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 6,
+      "transfer_mask_iou": 0.9906263314870047
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": null,
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.4120667278766632,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 7,
+      "transfer_mask_iou": 0.9850187265917603
+    },
+    {
+      "particle_id": 6,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.4508076012134552,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 10,
+      "transfer_mask_iou": 0.9969923441487423
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": false,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\7e0c56c44b_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\7e0c56c44b_pred.json",
+    "source_annotation_fingerprint": "ba5227923d48edcd303c30c6ae1affc4390fd6f4cc264fb62b86ac8120206e89",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 7,
+      "old_mask_count": 14,
+      "hungarian_matched_pairs": 7,
+      "transferred_valid_labels": 4,
+      "new_unmatched_masks": 0,
+      "old_unmatched_masks": 7,
+      "source_annotation_gt_only_ids": 14,
+      "source_duplicate_annotation_rows_collapsed": 1,
+      "source_mask_shape_alignment": "none"
+    }
+  }
+}

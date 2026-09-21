@@ -1,0 +1,82 @@
+{
+  "image_name": "3537f150cd",
+  "timestamp": "2026-08-17T20:38:11.063615",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": null,
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.4464126527309418,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "unmatched_new_mask"
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.6182928085327148,
+      "correct": true,
+      "border_touching": false
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": true,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\3537f150cd_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\3537f150cd_pred.json",
+    "source_annotation_fingerprint": "1c01b154d1085c563300c72540b1e0716fa11937d6d2e887aec2c8ab23158f35",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 2,
+      "old_mask_count": 3,
+      "hungarian_matched_pairs": 0,
+      "transferred_valid_labels": 0,
+      "new_unmatched_masks": 2,
+      "old_unmatched_masks": 3,
+      "source_annotation_gt_only_ids": 29,
+      "source_duplicate_annotation_rows_collapsed": 2,
+      "source_mask_shape_alignment": "none"
+    },
+    "skip_review_history": [
+      {
+        "reviewed_at": "2026-08-17T20:38:11+09:00",
+        "mode": "click_selected_skipped_masks",
+        "mask_sources": [
+          "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions_sam_p095_s080\\3537f150cd_pred.json"
+        ],
+        "displayed_skipped_particle_ids": [
+          0,
+          1
+        ],
+        "reviewed_particle_ids": [
+          0,
+          1
+        ],
+        "annotated_particle_ids": [
+          1
+        ],
+        "kept_skipped_particle_ids": [
+          0
+        ],
+        "prediction_displayed_in_gui": false,
+        "mask_alignment": "none"
+      }
+    ],
+    "zero_classifiable_review_blinded_to_predictions": true
+  }
+}

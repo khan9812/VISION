@@ -1,0 +1,146 @@
+{
+  "image_name": "986f86c3b5",
+  "timestamp": "2026-08-17T16:38:20.715985",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.823564887046814,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9975074775672981
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.8737657070159912,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 1,
+      "transfer_mask_iou": 0.9976133651551312
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.8297110199928284,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 2,
+      "transfer_mask_iou": 0.9972375690607734
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.902536928653717,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 3,
+      "transfer_mask_iou": 0.9961980136561143
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.9201515913009644,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 4,
+      "transfer_mask_iou": 0.9869955156950673
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.8126744031906128,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 5,
+      "transfer_mask_iou": 0.992446829656132
+    },
+    {
+      "particle_id": 6,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.3713648319244385,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 8,
+      "transfer_mask_iou": 0.9472573839662447
+    },
+    {
+      "particle_id": 7,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.9215565919876099,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 6,
+      "transfer_mask_iou": 0.996469465648855
+    },
+    {
+      "particle_id": 8,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.9003384113311768,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 7,
+      "transfer_mask_iou": 0.9959430219978362
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": false,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\986f86c3b5_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\986f86c3b5_pred.json",
+    "source_annotation_fingerprint": "d34e5276a1ea82e7b9cb8498bf162d1ff5aab6a551bbb648c866636c8a30724a",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 9,
+      "old_mask_count": 10,
+      "hungarian_matched_pairs": 9,
+      "transferred_valid_labels": 5,
+      "new_unmatched_masks": 0,
+      "old_unmatched_masks": 1,
+      "source_annotation_gt_only_ids": 1,
+      "source_duplicate_annotation_rows_collapsed": 0,
+      "source_mask_shape_alignment": "none"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "image_name": "2e5dab1969",
+  "timestamp": "2026-08-17T20:38:05.326260",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.7325662970542908,
+      "correct": true,
+      "border_touching": false
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.8506372570991516,
+      "correct": true,
+      "border_touching": false
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": null,
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.4580288529396057,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 25,
+      "transfer_mask_iou": 0.7336204244847739
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.8044981360435486,
+      "correct": true,
+      "border_touching": false
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": null,
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.37941068410873413,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "unmatched_new_mask"
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": null,
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.36471161246299744,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 17,
+      "transfer_mask_iou": 0.9800100578325371
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": true,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\2e5dab1969_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\2e5dab1969_pred.json",
+    "source_annotation_fingerprint": "72f2f00a7bed52bfb81c72cfca121eed93bac6bf2d7900aadd705c956dee0a6b",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 6,
+      "old_mask_count": 36,
+      "hungarian_matched_pairs": 5,
+      "transferred_valid_labels": 0,
+      "new_unmatched_masks": 1,
+      "old_unmatched_masks": 31,
+      "source_annotation_gt_only_ids": 53,
+      "source_duplicate_annotation_rows_collapsed": 0,
+      "source_mask_shape_alignment": "none"
+    },
+    "skip_review_history": [
+      {
+        "reviewed_at": "2026-08-17T20:38:05+09:00",
+        "mode": "click_selected_skipped_masks",
+        "mask_sources": [
+          "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions_sam_p095_s080\\2e5dab1969_pred.json"
+        ],
+        "displayed_skipped_particle_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "reviewed_particle_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "annotated_particle_ids": [
+          0,
+          1,
+          3
+        ],
+        "kept_skipped_particle_ids": [
+          2,
+          4,
+          5
+        ],
+        "prediction_displayed_in_gui": false,
+        "mask_alignment": "none"
+      }
+    ],
+    "zero_classifiable_review_blinded_to_predictions": true
+  }
+}

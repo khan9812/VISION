@@ -1,0 +1,134 @@
+{
+  "image_name": "87429394b0",
+  "timestamp": "2026-08-17T16:38:19.487979",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.5013228058815002,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9942616679418516
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.3798489272594452,
+      "correct": false,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 1,
+      "transfer_mask_iou": 0.9858449988269335
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.48871225118637085,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 2,
+      "transfer_mask_iou": 0.9922437673130194
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.538818359375,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 3,
+      "transfer_mask_iou": 0.998434074538052
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.3532494008541107,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 4,
+      "transfer_mask_iou": 0.9956953246442665
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.2824549674987793,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 5,
+      "transfer_mask_iou": 0.9953427448697424
+    },
+    {
+      "particle_id": 6,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.5390411019325256,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 6,
+      "transfer_mask_iou": 0.997142585008096
+    },
+    {
+      "particle_id": 7,
+      "gt_shape": "Quadrilateral",
+      "pred_shape": "Quadrilateral",
+      "pred_confidence": 0.7447929382324219,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 7,
+      "transfer_mask_iou": 0.9980257510729613
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": false,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\87429394b0_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\87429394b0_pred.json",
+    "source_annotation_fingerprint": "78e130155f255a591ffe84a3a1edade3f1faba59deeb9fc0a74dd1c6074f068e",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 8,
+      "old_mask_count": 8,
+      "hungarian_matched_pairs": 8,
+      "transferred_valid_labels": 8,
+      "new_unmatched_masks": 0,
+      "old_unmatched_masks": 0,
+      "source_annotation_gt_only_ids": 2,
+      "source_duplicate_annotation_rows_collapsed": 0,
+      "source_mask_shape_alignment": "none"
+    }
+  }
+}

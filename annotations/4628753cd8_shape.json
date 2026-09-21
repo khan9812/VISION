@@ -1,0 +1,62 @@
+{
+  "image_name": "4628753cd8",
+  "timestamp": "2026-08-17T16:35:31.011734",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Circle",
+      "pred_shape": "Circle",
+      "pred_confidence": 0.5269989967346191,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9952390020948391
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.49544814229011536,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 2,
+      "transfer_mask_iou": 0.9860154905335629
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": false,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\4628753cd8_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\4628753cd8_pred.json",
+    "source_annotation_fingerprint": "d434e45626d8dbcf45bd3d68ca7f6a920c3dfd71a370f67d26b3ef9820d6949b",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 2,
+      "old_mask_count": 4,
+      "hungarian_matched_pairs": 2,
+      "transferred_valid_labels": 1,
+      "new_unmatched_masks": 0,
+      "old_unmatched_masks": 2,
+      "source_annotation_gt_only_ids": 27,
+      "source_duplicate_annotation_rows_collapsed": 1,
+      "source_mask_shape_alignment": "none"
+    }
+  }
+}

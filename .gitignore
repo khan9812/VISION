@@ -37,7 +37,7 @@ cache/
 *.pickle
 preprocessed/
 predictions/
-annotations/
+# annotations/
 matched_annotations/
 label_comparisons/
 *_overlay.png

@@ -1,0 +1,144 @@
+{
+  "image_name": "6360a823da",
+  "timestamp": "2026-08-17T16:36:51.278237",
+  "particles": [
+    {
+      "particle_id": 0,
+      "gt_shape": "Irregular",
+      "pred_shape": "Irregular",
+      "pred_confidence": 0.4977149963378906,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 0,
+      "transfer_mask_iou": 0.9914476753226559
+    },
+    {
+      "particle_id": 1,
+      "gt_shape": null,
+      "pred_shape": "Irregular",
+      "pred_confidence": 0.44667497277259827,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 1,
+      "transfer_mask_iou": 0.9961819917276488
+    },
+    {
+      "particle_id": 2,
+      "gt_shape": "Irregular",
+      "pred_shape": "Irregular",
+      "pred_confidence": 0.4909535348415375,
+      "correct": true,
+      "border_touching": true,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 7,
+      "transfer_mask_iou": 0.9645745366063122
+    },
+    {
+      "particle_id": 3,
+      "gt_shape": "Triangle",
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.7419136166572571,
+      "correct": true,
+      "border_touching": false,
+      "skipped": false,
+      "annotation_transfer_status": "valid_label_transferred",
+      "source_particle_id": 2,
+      "transfer_mask_iou": 0.9843652838233988
+    },
+    {
+      "particle_id": 4,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.6186636686325073,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 4,
+      "transfer_mask_iou": 0.9967298259113205
+    },
+    {
+      "particle_id": 5,
+      "gt_shape": null,
+      "pred_shape": "Irregular",
+      "pred_confidence": 0.5064086318016052,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 5,
+      "transfer_mask_iou": 0.9907677846040219
+    },
+    {
+      "particle_id": 6,
+      "gt_shape": null,
+      "pred_shape": "Circle",
+      "pred_confidence": 0.4612540006637573,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 3,
+      "transfer_mask_iou": 0.9925447813469429
+    },
+    {
+      "particle_id": 7,
+      "gt_shape": null,
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.3583022952079773,
+      "correct": null,
+      "border_touching": false,
+      "skipped": true,
+      "annotation_transfer_status": "source_annotation_skipped",
+      "source_particle_id": 6,
+      "transfer_mask_iou": 0.9932995055945876
+    },
+    {
+      "particle_id": 8,
+      "gt_shape": null,
+      "pred_shape": "Triangle",
+      "pred_confidence": 0.2915371358394623,
+      "correct": null,
+      "border_touching": true,
+      "skipped": true,
+      "annotation_transfer_status": "unmatched_new_mask"
+    }
+  ],
+  "annotation_metadata": {
+    "mode": "fixed_sam_setting_hungarian_label_transfer",
+    "sam_config": {
+      "points_per_side": 32,
+      "points_per_batch": 256,
+      "pred_iou_thresh": 0.95,
+      "stability_score_thresh": 0.8,
+      "crop_n_layers": 1,
+      "crop_n_points_downscale_factor": 2,
+      "crop_nms_thresh": 0.7,
+      "box_nms_thresh": 0.7,
+      "use_m2m": true
+    },
+    "blinded_to_predictions": false,
+    "manual_labels_modified": false,
+    "source_annotation_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\annotations\\6360a823da_shape.json",
+    "source_prediction_path": "C:\\Users\\Yong\\Research\\Entire_Framework\\workspace_outputs\\validation\\shape_validation\\predictions\\6360a823da_pred.json",
+    "source_annotation_fingerprint": "b98ce5dbecefec4e00e84731869ef61f56a5e1c12f0f8ea81d1e1131493a4e28",
+    "alignment": {
+      "method": "Hungarian assignment on old-vs-new binary-mask IoU",
+      "mask_iou_threshold": 0.5,
+      "new_mask_count": 9,
+      "old_mask_count": 8,
+      "hungarian_matched_pairs": 8,
+      "transferred_valid_labels": 3,
+      "new_unmatched_masks": 1,
+      "old_unmatched_masks": 0,
+      "source_annotation_gt_only_ids": 7,
+      "source_duplicate_annotation_rows_collapsed": 0,
+      "source_mask_shape_alignment": "none"
+    }
+  }
+}
