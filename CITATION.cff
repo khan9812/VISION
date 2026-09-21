@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite VISION and identify the release tag or commit used. A software DOI may be added if an archive is created."
+title: "VISION: Versatile Intelligent Segmentation for Image-based Observation of Nanoparticles"
+repository-code: "https://github.com/khan9812/VISION"
+url: "https://github.com/khan9812/VISION"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Yongsang
+  - family-names: Kim
+    given-names: Jiyong
+license: MIT

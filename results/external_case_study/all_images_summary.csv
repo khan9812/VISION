@@ -1,0 +1,5 @@
+image_id,group,source_image,segmentation_status,raw_mask_count,background_removed_count,final_mask_count,processed_shape,shape_status,spatial_status,figure_assets_complete
+006,gt_evaluation,data/case_study\006.tif,complete,11,1,10,2048x2048x3,complete,complete,True
+026,gt_evaluation,data/case_study\026.tif,complete,35,1,32,2048x2048x3,complete,complete,True
+066,gt_evaluation,data/case_study\066.tif,complete,9,1,8,2048x2048x3,complete,complete,True
+076,gt_evaluation,data/case_study\076.tif,complete,56,1,53,2048x2048x3,complete,complete,True

@@ -1,0 +1,5 @@
+image_id,source_image,shape_status,particle_count,dominant_shape,dominant_percentage,avg_confidence,shannon_entropy,simpson_diversity,particle aggregate,individual particle
+006,data/case_study\006.tif,complete,10,individual particle,90.0,0.529103410243988,0.46899559358928117,0.17999999999999994,1,9
+026,data/case_study\026.tif,complete,32,individual particle,100.0,0.5293660741299391,0.0,0.0,0,32
+066,data/case_study\066.tif,complete,8,individual particle,100.0,0.529326893389225,0.0,0.0,0,8
+076,data/case_study\076.tif,complete,53,individual particle,84.90566037735849,0.5188971476734809,0.6121961274908339,0.25631897472410103,8,45

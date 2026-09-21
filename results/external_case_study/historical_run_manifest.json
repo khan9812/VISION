@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "pipeline_version": "case-study-vision-v1",
+  "started_at": "2026-09-10T18:03:26+09:00",
+  "case_study_dir": "data/case_study",
+  "output_dir": "results/external_case_study",
+  "preprocessing_config": {
+    "pipeline_version": "case-study-vision-v1",
+    "method": "bm3d+noise2sr",
+    "bm3d_sigma": 40.0,
+    "noise2sr_epochs": 1500,
+    "clahe_enabled": false,
+    "clahe_clip_limit": null,
+    "noise2sr_configuration": {
+      "enabled": true,
+      "lr": 0.0001,
+      "epoch": 1500,
+      "batch_size": 12,
+      "patch_size": 128,
+      "scale_factor": 2,
+      "inference_averages": 50,
+      "gpu": 0
+    },
+    "random_seed_per_image": 42,
+    "execution": {
+      "loader_num_workers": 4,
+      "loader_persistent_workers": true,
+      "loader_generator_seed": 42,
+      "worker_seeds": "PyTorch base_seed + worker_id",
+      "augmentation": "Unchanged ImgTrain: horizontal/vertical flips, rotation 20 degrees, crop, tensor",
+      "training_samples_per_epoch": 40
+    }
+  },
+  "sam_config": {
+    "model_type": "hiera_l",
+    "points_per_side": 32,
+    "points_per_batch": 256,
+    "pred_iou_thresh": 0.95,
+    "stability_score_thresh": 0.8,
+    "crop_n_layers": 1,
+    "crop_n_points_downscale_factor": 2,
+    "crop_nms_thresh": 0.7,
+    "box_nms_thresh": 0.7,
+    "use_m2m": true
+  },
+  "spatial_config": {
+    "pipeline_version": "case-study-spatial-v5",
+    "source": "final_sam_masks_from_bm3d_noise2sr_image",
+    "measurement_unit": "px",
+    "voronoi_method": "boundary_pixels_clipped_to_convex_hull",
+    "kde_kernel": "gaussian",
+    "kde_grid_points": 360,
+    "kde_x_padding_fraction": 0.12,
+    "kde_gui_height": 0.76,
+    "median_ci_method": "percentile_bootstrap",
+    "median_ci_confidence": 0.95,
+    "median_ci_bootstrap_resamples": 10000,
+    "median_ci_seed": 42,
+    "hdbscan_min_cluster_size": 5,
+    "hdbscan_min_samples": 3
+  },
+  "shape_config": {
+    "pipeline_version": "case-study-vision-v1",
+    "clip_model": "ViT-L/14@336px",
+    "shape_labels": [
+      "particle aggregate",
+      "individual particle"
+    ],
+    "shape_descriptions": {
+      "particle aggregate": "a nanoparticle aggregate",
+      "individual particle": "an individual nanoparticle"
+    },
+    "clip_batch_size": 64,
+    "confidence_threshold": null
+  },
+  "hashes": {
+    "preprocessing": "9b8e31e654607843",
+    "segmentation_default": "7464761b7661a048",
+    "spatial": {
+      "006": "a84c885b52530952",
+      "026": "a84c885b52530952",
+      "066": "a84c885b52530952",
+      "076": "a84c885b52530952"
+    },
+    "shape": {
+      "006": "483c71ae2235ec1e",
+      "026": "483c71ae2235ec1e",
+      "066": "483c71ae2235ec1e",
+      "076": "483c71ae2235ec1e"
+    }
+  },
+  "inputs": [
+    {
+      "image_id": "006",
+      "group": "gt_evaluation",
+      "image": "data/case_study\\006.tif",
+      "ground_truth": "data/case_study\\006_gt.tif"
+    },
+    {
+      "image_id": "026",
+      "group": "gt_evaluation",
+      "image": "data/case_study\\026.tif",
+      "ground_truth": "data/case_study\\026_gt.tif"
+    },
+    {
+      "image_id": "066",
+      "group": "gt_evaluation",
+      "image": "data/case_study\\066.tif",
+      "ground_truth": "data/case_study\\066_gt.tif"
+    },
+    {
+      "image_id": "076",
+      "group": "gt_evaluation",
+      "image": "data/case_study\\076.tif",
+      "ground_truth": "data/case_study\\076_gt.tif"
+    }
+  ],
+  "finished_at": "2026-09-10T19:13:07+09:00",
+  "errors": [],
+  "release_note": "Historical 2026-09-10 execution; path strings normalized for publication. Release runtime fixes do not retroactively regenerate model predictions."
+}

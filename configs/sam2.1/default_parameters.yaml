@@ -1,0 +1,141 @@
+# Default Parameters for TEM Image Analysis
+# Study-specific settings; references identify methods, not universal parameter defaults.
+
+# ==============================================================================
+# PREPROCESSING PARAMETERS
+# ==============================================================================
+
+# CLAHE (Contrast Limited Adaptive Histogram Equalization)
+# Reference: Zuiderveld, K. (1994). Contrast Limited Adaptive Histogram
+#            Equalization. Graphics Gems IV, pp. 474-485.
+clahe:
+  enabled: false # Set to true to apply CLAHE after denoising
+  clip_limit: 4.0 # Study-specific contrast clipping value
+  tile_grid_size: [64, 64] # Study-specific number of tiles per dimension
+
+# BM3D (Block-Matching and 3D filtering)
+# Reference: Dabov, K., Foi, A., Katkovnik, V., & Egiazarian, K. (2007).
+#            Image denoising by sparse 3-D transform-domain collaborative
+#            filtering. IEEE Transactions on Image Processing, 16(8), 2080-2095.
+bm3d:
+  enabled: true
+  profile: "np" # Normal profile - uses literature-based parameters for high quality
+  sigma_psd: null # Will be estimated via MAD method or loaded from dataset_parameters.yaml
+  # Note: sigma_psd represents noise standard deviation (0-255 scale)
+  # Optimal value is data-dependent and should be estimated per dataset
+  # The Normal profile and noise-level input are separate choices.
+
+# Non-Local Means (if used instead of Noise2SR)
+# Reference: Buades, A., Coll, B., & Morel, J. M. (2005). A non-local
+#            algorithm for image denoising. CVPR, Vol. 2, pp. 60-65.
+nlm:
+  enabled: false # Set to true if using multi-scale NLM instead of Noise2SR
+  h: 15 # Filter strength (range: 10-20 for TEM images)
+  templateWindowSize: 7 # Size of template patch (OpenCV default)
+  searchWindowSize: 21 # Size of search area (OpenCV default)
+  scale: 2 # Multi-scale upsampling factor
+
+# Noise2SR (Zero-Shot Denoising via Deep Learning)
+# Reference: Tian, X., et al. (2024). Zero-Shot Image Denoising for
+#            High-Resolution Electron Microscopy. IEEE Transactions on
+#            Computational Imaging, 10, 1462-1475.
+# GitHub: https://github.com/MeijiTian/ZS-Denoiser-HREM
+noise2sr:
+  enabled: true # Applied after BM3D in the locked BM3D → Noise2SR pipeline
+  lr: 0.0001 # Learning rate (1e-4)
+  epoch: 1500 # Training epochs (500-1500 range, 1000 is balanced)
+  batch_size: 12 # Manuscript training batch size
+  patch_size: 128 # Manuscript training patch size
+  scale_factor: 2 # Subsampling scale factor (s parameter)
+  inference_averages: 50 # Number of inference averages (M parameter)
+  gpu: 0 # GPU device id (-1 for CPU, 0+ for specific GPU)
+  seed: 42 # Reproducibility seed recorded in execution provenance
+  num_workers: 0 # External-case reproduction explicitly selects 4 workers
+  persistent_workers: false
+  loader_generator_seed: null
+
+  # IMPORTANT NOTE: Noise2SR is a zero-shot method that trains a neural network
+  # specifically for EACH input image. Training time per image:
+  # - GPU (CUDA): 2-5 minutes (recommended)
+  # - CPU: 10-30 minutes (NOT recommended for production)
+
+# ==============================================================================
+# SEGMENTATION PARAMETERS (SAM)
+# ==============================================================================
+
+# Segment Anything Model 2.1 (SAM2)
+# Source: https://github.com/facebookresearch/sam2 (SAM 2.1 checkpoint).
+# UNIFIED PARAMETERS (consistent across all scripts)
+sam:
+  model_type: "hiera_l" # Hierarchical Vision Transformer - Large
+  checkpoint_path: "checkpoints/sam2.1_hiera_large.pt"
+  config_path: "configs/sam2.1/sam2.1_hiera_l.yaml"
+
+  # SAM2AutomaticMaskGenerator unified parameters
+  points_per_side: 32 # Standard grid density
+  points_per_batch: 256 # Batch size used across validation and GUI runs
+  pred_iou_thresh: 0.95 # Empirical default from sequential screening
+  stability_score_thresh: 0.80 # Empirical default from sequential screening
+  box_nms_thresh: 0.7 # NMS threshold for duplicate removal
+  crop_n_layers: 1 # Multi-scale cropping layers
+  crop_nms_thresh: 0.7 # NMS threshold for crops
+  crop_n_points_downscale_factor: 2 # Point density in crops
+  use_m2m: true # Mask-to-mask refinement enabled
+
+  # Note: min_mask_region_area is NOT used
+  # Background masks are filtered by 4-border touch and >90% coverage
+
+# ==============================================================================
+# SHAPE CLASSIFICATION PARAMETERS (CLIP)
+# ==============================================================================
+
+# CLIP (Contrastive Language-Image Pre-training)
+# Reference: Radford, A., et al. (2021). Learning transferable visual models
+#            from natural language supervision. ICML, pp. 8748-8763.
+# UNIFIED PARAMETERS (consistent across all scripts)
+clip:
+  model_name: "ViT-L/14@336px" # Highest accuracy model (76.6% ImageNet)
+  batch_size: 64 # Batch size for inference
+  temperature: null # Use the pretrained CLIP model's learned logit scale
+
+  # Confidence threshold - Always use highest probability
+  # Set to null to always accept the most confident prediction
+  confidence_threshold: null
+
+  # Shape categories - USER DEFINED
+  # These are specified at runtime based on material system
+  shape_categories: null # e.g., ["spherical", "cubic", "rod-like", "irregular"]
+
+# ==============================================================================
+# NOISE ESTIMATION PARAMETERS
+# ==============================================================================
+
+# MAD (Median Absolute Deviation) method
+# Reference: Donoho, D. L., & Johnstone, I. M. (1994). Ideal spatial
+#            adaptation by wavelet shrinkage. Biometrika, 81(3), 425-455.
+noise_estimation:
+  method: "mad" # Median Absolute Deviation
+  gaussian_constant: 0.6745 # Φ^(-1)(3/4) for Gaussian distribution
+  filter_type: "laplacian" # High-pass filter for noise isolation
+
+
+# ==============================================================================
+# USER-ADJUSTABLE PARAMETERS (Interactive Prompts)
+# ==============================================================================
+
+# These parameters are determined interactively during analysis:
+# 1. min_mask_region_area - Smart Wizard (user draws minimum particle size circle)
+# 2. shape_categories - CLIP classification targets (user-defined list)
+# 3. scale_bar_length - Smart Wizard (user selects scale bar endpoints)
+
+# ==============================================================================
+# NOTES FOR PAPER WRITING
+# ==============================================================================
+
+# When writing Methods section, cite:
+# - Preprocessing: Dabov et al. (2007) for BM3D
+# - Noise estimation: Donoho & Johnstone (1994) for MAD
+# - Segmentation: Kirillov et al. (2023) for SAM
+# - Shape classification: Radford et al. (2021) for CLIP
+# - Contrast enhancement (if used): Zuiderveld (1994) for CLAHE
+# - SAM github에서 파라미터 가져옴

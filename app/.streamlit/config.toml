@@ -1,0 +1,31 @@
+[server]
+# Maximum upload file size in MB
+maxUploadSize = 1024
+
+# Maximum message size in MB (for large images)
+maxMessageSize = 1024
+
+# CORS and XSRF - disabled for local development to avoid 403 errors
+enableCORS = false
+enableXsrfProtection = false
+
+# Headless mode - false for local development
+headless = false
+
+# Port (default 8501)
+port = 8501
+
+# Address to bind
+address = "localhost"
+
+[browser]
+# Gather usage stats
+gatherUsageStats = false
+
+[theme]
+# VISION theme colors
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"

@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+
+# Models and private/source data
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+Dataset/
+Dataset_*/
+data/raw/
+data/annotations/
+
+# Intermediate pipeline artifacts
+cache/
+*_cache/
+*_cache.json
+*_cache.pkl
+*_cache.pickle
+**/cache/**
+**/*cache*/**
+*.pkl
+*.pickle
+preprocessed/
+predictions/
+annotations/
+matched_annotations/
+label_comparisons/
+*_overlay.png
+*_preprocessed.png
+
+# Keep the curated GUI example assets even when their names end in _overlay.
+!app/assets/overview/*.png
+
+# Runtime output
+workspace_outputs/
+outputs/
+logs/
+*.log
+
+# Keep the curated release results
+!results/
+!results/**

@@ -1,0 +1,187 @@
+{
+  "fixed_setting": {
+    "segmentation_model": "SAM 2.1 Hiera Large",
+    "pred_iou_thresh": 0.95,
+    "stability_score_thresh": 0.8,
+    "preprocessing": "BM3D + Noise2SR",
+    "bm3d_sigma_255": 40.0,
+    "noise2sr_epochs": 1500,
+    "shape_model": "CLIP ViT-L/14@336px"
+  },
+  "screening": {
+    "images": 256,
+    "selected_mode": [
+      0.95,
+      0.8
+    ],
+    "selected_mode_count": 140,
+    "selected_mode_percent": 54.6875,
+    "classification_method": "datasetninja_gt_hungarian",
+    "gt_matching_iou_threshold": 0.5,
+    "growth_rate": "delta_FP / delta_TP",
+    "growth_rate_threshold": 0.5,
+    "validation_exclusion_rule": "exclude size- and shape-validation image IDs",
+    "preprocessing": "BM3D only, sigma_psd=40/255",
+    "no_crossing_fallback_count": 0
+  },
+  "preprocessing": {
+    "images": 360,
+    "macro_precision": 0.817875,
+    "macro_precision_ci95": [
+      0.787248,
+      0.848502
+    ],
+    "macro_recall": 0.806232,
+    "macro_recall_ci95": [
+      0.774531,
+      0.837934
+    ],
+    "macro_f1": 0.788553,
+    "macro_f1_ci95": [
+      0.757633,
+      0.819473
+    ],
+    "unmatched_predictions_per_image": 1.497222,
+    "unmatched_predictions_per_image_ci95": [
+      1.120521,
+      1.873923
+    ],
+    "delta_f1_vs_bm3d": 0.011468,
+    "delta_f1_vs_bm3d_ci95": [
+      0.001562,
+      0.021373
+    ]
+  },
+  "size_validation": {
+    "images": 200,
+    "gt_particles": 5793,
+    "predictions": 4100,
+    "matched_particles": 3932,
+    "pooled_precision": 0.9590243902,
+    "pooled_precision_ci95": [
+      0.946611817,
+      0.9695569786
+    ],
+    "image_macro_recall": 0.847824,
+    "image_macro_recall_ci95": [
+      0.809869,
+      0.883237
+    ],
+    "mean_matched_iou": 0.878106,
+    "mean_matched_iou_ci95": [
+      0.865807,
+      0.890277
+    ],
+    "area_mae_px2": 254.459817,
+    "area_mae_px2_ci95": [
+      216.683827,
+      300.708683
+    ],
+    "area_mape_percent": 11.069593,
+    "area_mape_percent_ci95": [
+      9.834796,
+      12.309047
+    ],
+    "signed_area_bias_px2": -247.620041,
+    "identity_line_r2": 0.996032,
+    "lins_ccc": 0.99794
+  },
+  "shape_validation": {
+    "images": 100,
+    "classifiable_particles": 403,
+    "hungarian_matched_pairs": 607,
+    "transferred_valid_labels": 359,
+    "accuracy": 0.866004963,
+    "accuracy_ci95": [
+      0.7984079533,
+      0.9194461382
+    ],
+    "macro_f1": 0.658858971,
+    "macro_f1_ci95": [
+      0.5003353776,
+      0.7738652889
+    ],
+    "weighted_f1": 0.865066524,
+    "macro_precision": 0.704481132,
+    "macro_recall": 0.648188401
+  },
+  "pf_sui": {
+    "observations": 540,
+    "means": {
+      "A": 0.995882,
+      "B": 0.97315,
+      "C": 0.914987,
+      "D": 0.911969,
+      "E": 0.7634,
+      "F": 0.759693
+    }
+  },
+  "release_runtime_noise2sr": {
+    "lr": 0.0001,
+    "epoch": 1500,
+    "batch_size": 12,
+    "patch_size": 128,
+    "s": 2,
+    "M": 50,
+    "gpu": 0,
+    "seed": 42,
+    "num_workers": 0,
+    "persistent_workers": false,
+    "loader_generator_seed": null
+  },
+  "historical_noise2sr_provenance": "External cases explicitly recorded patch 128/batch 12. Earlier benchmark caches do not establish every historical Noise2SR hyperparameter; the current default is not retrospective proof.",
+  "external_case_study": {
+    "image_ids": [
+      "006",
+      "026",
+      "066",
+      "076"
+    ],
+    "particle_counts": [
+      10,
+      32,
+      8,
+      53
+    ],
+    "individual_counts": [
+      9,
+      32,
+      8,
+      45
+    ],
+    "cluster_counts": [
+      1,
+      0,
+      0,
+      8
+    ],
+    "pf_eligible_counts": [
+      4,
+      24,
+      2,
+      44
+    ],
+    "pf_sui": [
+      0.5572989448879252,
+      0.627458665813548,
+      0.8795050019654334,
+      0.6484403691425938
+    ],
+    "noise2sr": {
+      "lr": 0.0001,
+      "epoch": 1500,
+      "batch_size": 12,
+      "patch_size": 128,
+      "s": 2,
+      "M": 50,
+      "gpu": 0,
+      "seed": 42,
+      "num_workers": 4,
+      "persistent_workers": true,
+      "loader_generator_seed": 42
+    },
+    "pred_iou_thresh": 0.95,
+    "stability_score_thresh": 0.8,
+    "provenance": "external_case_study/historical_run_manifest.json"
+  }
+}

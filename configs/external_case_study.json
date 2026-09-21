@@ -1,0 +1,31 @@
+{
+  "noise2sr": {
+    "lr": 0.0001,
+    "epoch": 1500,
+    "batch_size": 12,
+    "patch_size": 128,
+    "s": 2,
+    "M": 50,
+    "gpu": 0,
+    "seed": 42,
+    "num_workers": 4,
+    "persistent_workers": true,
+    "loader_generator_seed": 42
+  },
+  "sam": {
+    "model_type": "hiera_l",
+    "points_per_side": 32,
+    "points_per_batch": 256,
+    "pred_iou_thresh": 0.95,
+    "stability_score_thresh": 0.8,
+    "crop_n_layers": 1,
+    "crop_n_points_downscale_factor": 2,
+    "crop_nms_thresh": 0.7,
+    "box_nms_thresh": 0.7,
+    "use_m2m": true,
+    "small_particles": false,
+    "gpu_quality": "high"
+  },
+  "source": "2026-09-10 final external run",
+  "note": "Loader settings are recorded explicitly; GUI defaults use zero workers."
+}

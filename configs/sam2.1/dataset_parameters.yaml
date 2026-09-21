@@ -1,0 +1,30 @@
+# Dataset-specific parameters for TEM image preprocessing
+# These parameters override the defaults in default_parameters.yaml
+
+# BM3D Denoising Parameters
+# Reference: Dabov et al. (2007) "Image Denoising by Sparse 3-D Transform-Domain Collaborative Filtering"
+bm3d:
+  # sigma_psd: Noise standard deviation for BM3D denoising
+  # This value was estimated from TEM image analysis
+  #
+  # Typical values for TEM images:
+  #   - Clean images: 5-10
+  #   - Moderate noise: 10-15
+  #   - High noise: 15-25
+  #   - Very noisy: 25-35
+  #
+  # Current setting: Standard BM3D default value (40)
+  # This is a commonly used value for medium-noise images
+  sigma_psd: 40.0
+
+  # estimation_method: How this value was determined
+  estimation_method: "standard_default"
+
+  # enabled: Use BM3D as first denoising step
+  enabled: true
+# Notes:
+# - This sigma_psd will be used for BM3D preprocessing
+# - After BM3D, Noise2SR will be applied if enabled in default_parameters.yaml
+# - You can adjust sigma_psd based on visual inspection:
+#   - Increase if images look too noisy after denoising
+#   - Decrease if images look over-smoothed
