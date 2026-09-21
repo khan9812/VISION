@@ -20,10 +20,10 @@ checkpoints/
 *.pt
 *.pth
 *.ckpt
-Dataset/
+# Dataset/
 Dataset_*/
 data/raw/
-data/annotations/
+# data/annotations/
 
 # Intermediate pipeline artifacts
 cache/
